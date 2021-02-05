@@ -1,27 +1,44 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
+/* #try{
+  justify-content: left;
+  align-items: left;
+}
+
+#pch{
+  justify-content: center;
+  align-items: center;
+} */
+
 
 #header {
   background-color: lightpink;
   height: 30vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+  padding: 20px;
+
 }
 
 #container {
   background-color: black;
-  height: 70vh;
+  height: 100vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .tile {
   height: 200px;
   width: 200px;
+  flex: 1 0 25%;
+  margin: 50px;
   background-color: aliceblue;
 }
